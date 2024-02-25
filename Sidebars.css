@@ -1,42 +1,38 @@
 .sidebar {
-    position: absolute;
+    position: fixed;
     top: 56px;
     /* height of navigation_menu */
     left: 0;
-    width: 250px;
-    height: calc(100vh - 56px);
+    width: 240px;
+    height: calc(100vh - 80px);
     /* height of viewport minus height of navigation_menu */
-    background-color: #f5f5f5;
-    transform: translateX(-100%);
+    background-color: #ffffff;
+    color: #ffffff;
     transition: transform 0.3s ease-out;
 
     bottom: 0;
     padding: 12px 0;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
 }
 
-.sidebar_open {
-    width: calc(100% + 274px);
-    margin-left: -80px;
-    box-shadow: inset -80px 0 80px rgba(9, 0, 128, 0.5), inset 80px 0 80px rgba(255, 255, 255, 0.5);
-    border-radius: 0;
-    z-index: 10;
-    transform: none;
+svg {
+    fill: rgb(43, 195, 255);
 }
+
+
 
 .sidebar_toggle {
     background: none;
     border: none;
-    color: #fff;
+    color: #360505;
     cursor: pointer;
     padding: 5px;
     margin-bottom: 20px;
 }
 
 .sidebar_section {
-    display: flex;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(80, 72, 72);
 }
 
 .sidebar_section_title {
@@ -46,10 +42,63 @@
 
 .sidebar_section_link {
     display: flex;
-    align-items: center;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 24px;
+    height: 40px;
 }
+
+.sidebar_section_link svg,
+.sidebar_section_avatar {
+    height: 24px;
+    width: 24px;
+    margin-right: 24px;
+}
+
+.sidebar_section_link--selected {
+
+    background-color: rgba(182, 125, 125, 0.1);
+    font-weight: 500;
+
+}
+
+.sidebar_section_link:hover {
+    color: #b92828;
+}
+.avatar {
+    position: inherit;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .avatar-button {
+    background: linear-gradient(to right, cyan 0%, blue 100%);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.375rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .avatar button:hover {
+    background: linear-gradient(to bottom right, cyan 0%, blue 100%);
+  }
+  
+  .avatar button:focus {
+    box-shadow: 0 0 0 2px rgba(192, 255, 255, 0.5);
+    outline: none;
+  }
+  .avatar button:focus {
+      box-shadow: 0 0 0 2px rgba(0, 128, 128, 0.5);
+    }
+  
 
 .sidebar_section_link:hover {
     color: #b92828;
