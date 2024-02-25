@@ -5,11 +5,15 @@ function Feed() {
   return (
     <main className='feed'>
       <div className="feed_item">
-		  <a href="https://youtu.be/fhNRFbo1J6M?si=xBhrhHQy3x1lgJ9w">
-            <div class=""><img src="tham1.jpg"/></div>
-            </a>
+        <a href="https://youtu.be/fhNRFbo1J6M?si=xBhrhHQy3x1lgJ9w">
+          <div className="">
+            <img src="tham1.jpg" alt=""/>
+          </div>
+        </a>
 			<div className="feed_item_info">
-                <div className=""><img className="feed_item_info_avatar" alt=""  src="logo.jpg"/> </div>
+                <div className="">
+                    <img className="feed_item_info_avatar" alt=""  src="logo.jpg"/> 
+                    </div>
                 <div>
                     <h3>
                          <a href="https://youtu.be/fhNRFbo1J6M?si=xBhrhHQy3x1lgJ9w"> Mobile Best Coding App <br/> HTML CSS JAVASCRIPT |</a>
@@ -22,7 +26,7 @@ function Feed() {
 
         <div className="feed_item">
 		  <a href="https://youtu.be/fhNRFbo1J6M?si=xBhrhHQy3x1lgJ9w">
-            <div class=""><img src="tham1.jpg"/></div>
+            <div class=""><img src="tham1.jpg" alt=''/></div>
             </a>
 			<div className="feed_item_info">
                 <div className=""><img className="feed_item_info_avatar" alt=""  src="logo.jpg"/> </div>
@@ -37,7 +41,7 @@ function Feed() {
         </div>
         <div className="feed_item">
 		  <a href="https://youtu.be/ifQvdcHSmlA?si=dxE6sVRvtuTvcUA_">
-            <div className=""><img src="tham2.jpg"/></div>
+            <div className=""><img src="tham2.jpg" alt=''/></div>
             </a>
 			<div className="feed_item_info">
                 <div className=""><img className="feed_item_info_avatar" alt=""  src="logo.jpg"/> </div>
